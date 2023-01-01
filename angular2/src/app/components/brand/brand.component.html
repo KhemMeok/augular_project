@@ -1,0 +1,13 @@
+<p>brand works!</p>
+
+<form [formGroup]="form" (ngSubmit)="createBrand()">
+  <div>Brand : <input type="text" formControlName="name" /></div>
+
+  <div>
+    <button type="submit">Save</button>
+  </div>
+
+  <table border="1">
+    <tr *ngFor="let brand of brands">{{brand.name }}</tr>
+  </table>
+</form>
